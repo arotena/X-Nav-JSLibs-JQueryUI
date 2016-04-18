@@ -1,0 +1,20 @@
+body{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+#nombre, #apellido{
+  width: 15%;
+  height: 5%;
+}
+#correo{
+    height: 5%;
+    width: 30%;
+}
+.btn{
+  width: 15%;
+  height: 5%;
+  color: white;
+  margin-top: 2%;
+  background-color: green;
+}

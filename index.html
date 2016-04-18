@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+		  $(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+  </script>
+	<script>
+				$(function() {
+					var availableTags = [
+						"Alberto",
+						"Samuel",
+						"Miguel",
+						"Alejandro"
+
+					];
+					$( "#nombre" ).autocomplete({
+						source: availableTags
+					});
+				});
+	</script>
+	<script>
+	$(document).ready(function() {
+    $("#ter").click(function() {
+				$("#disponible").html("No disponible")
+    });
+});
+  </script>
+</head>
+<body>
+	<h1>Registrate</h1>
+	<p>Es gratis y lo será siempre.</p>
+	<div class="ui-widget">
+	  <input type="text" id="nombre" placeholder="Nombre">
+		<input type="text" id="apellido" placeholder="Apellidos">
+		</br>
+		</br>
+		<input type="text" id="correo" placeholder="ejemplo@ejemplo.com"></br>
+		<p>Fecha De Nacimiento: </p>
+		<input type="text" id="datepicker">
+	</div>
+
+	<div class="col-md-12">
+					<input id="ter" type="button" name="nombre3" class="btn" value="Terminado">
+	</div>
+	<p id="disponible"></p>
+</body>
+</html>
